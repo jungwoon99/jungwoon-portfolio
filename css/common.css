@@ -2316,3 +2316,65 @@ body{
     }
 
 }
+/* =========================
+   MOBILE SLIDE IMAGE FIX
+========================= */
+
+@media (max-width:768px){
+
+    /* GALLERY */
+    .project-img{
+        position:relative !important;
+        width:100% !important;
+        min-height:260px !important;
+        background:#ddd;
+        overflow:hidden;
+    }
+
+    .project-img .gallery-img{
+        position:absolute !important;
+        left:0;
+        top:0;
+
+        width:100% !important;
+        height:100% !important;
+
+        object-fit:contain !important;
+
+        opacity:0;
+        transition:opacity .5s ease;
+    }
+
+    .project-img .gallery-img.active{
+        opacity:1 !important;
+    }
+
+
+    /* MUSEUM */
+    .museum-image{
+        position:relative !important;
+        width:100% !important;
+        min-height:280px !important;
+        background:#111111;
+        overflow:hidden;
+    }
+
+    .museum-image .museum-img{
+        position:absolute !important;
+        left:0;
+        top:0;
+
+        width:100% !important;
+        height:100% !important;
+
+        object-fit:contain !important;
+
+        opacity:0;
+        transition:opacity .5s ease;
+    }
+
+    .museum-image .museum-img.active{
+        opacity:1 !important;
+    }
+
+}
